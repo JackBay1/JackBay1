@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Modern</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #5D3FD3;
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #5D3FD3;
+            border-radius: 5px;
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        #content {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #5D3FD3;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-article {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-article h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Tambahan jarak antar elemen */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#content {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#comments-section {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column;
+    }
+}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            #main {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            #content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">article</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="main">
+        <div id="content">
+            <h2>Konten Utama</h2>
+            <img src="pasar.jpg" alt="Sawah">
+            <p>Pasar atau pekan adalah institusi, prosedur, hubungan sosial dan infrastruktur tempat usaha menjual barang, jasa, dan tenaga kerja untuk orang-orang dengan imbalan uang.[1] Barang dan jasa yang dijual menggunakan alat pembayaran yang sah seperti uang fiat. Kegiatan ini merupakan bagian dari perekonomian. Ini adalah pengaturan yang memungkinkan pembeli dan penjual untuk item pertukaran. Persaingan sangat penting dalam pasar, dan memisahkan pasar dari perdagangan. Dua orang mungkin melakukan perdagangan, tetapi dibutuhkan setidaknya tiga orang untuk memiliki pasar, sehingga ada persaingan pada setidaknya satu dari dua belah pihak. Pasar bervariasi dalam ukuran, jangkauan, skala geografis, lokasi jenis dan berbagai komunitas manusia, serta jenis barang dan jasa yang diperdagangkan. Beberapa contoh termasuk pasar petani lokal yang diadakan di alun-alun kota atau tempat parkir, pusat perbelanjaan dan pusat perbelanjaan, mata uang internasional dan pasar komoditas, hukum menciptakan pasar seperti untuk izin polusi, dan pasar ilegal seperti pasar untuk obat-obatan terlarang.</p>
+        </div>
+
+        <aside id="sidebar">
+            <h2>Artikel Terkait</h2>
+            <div class="sidebar-article">
+                <h3>Artikel 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Vivamus hendrerit enim ac mi ultricies aliquet.</p>
+            </div>
+            <div class="sidebar-article">
+                <h3>Artikel 2</h3>
+                <p>Donec pharetra est at libero efficitur, id malesuada orci tempor. Integer accumsan nisi et lectus scelerisque, ut gravida metus blandit.</p>
+            </div>
+            <div class="sidebar-article">
+                <h3>Artikel 3</h3>
+                <p>Aliquam erat volutpat. Curabitur lacinia ligula eget nisl fermentum, sed fermentum massa congue. Nam lacinia pretium arcu.</p>
+            </div>
+            <div class="sidebar-article">
+                <h3>Artikel 3</h3>
+                <p>Aliquam erat volutpat. Curabitur lacinia ligula eget nisl fermentum, sed fermentum massa congue. Nam lacinia pretium arcu.</p>
+            </div>
+            <div class="sidebar-article">
+                <h3>Artikel 3</h3>
+                <p>Aliquam erat volutpat. Curabitur lacinia ligula eget nisl fermentum, sed fermentum massa congue. Nam lacinia pretium arcu.</p>
+                </div>                              
+            </div>
+        </aside>
+    </section>
+
+    <section id="comments-section">
+        <div class="comment">
+            <h4>John Doe</h4>
+            <p>Komentar ini sangat bermanfaat, terima kasih atas informasinya!</p>
+        </div>
+        <div class="comment">
+            <h4>Jane Smith</h4>
+            <p>Saya suka cara Anda menyajikan informasi, sangat jelas dan mudah dimengerti.</p>
+        </div>
+        <div class="comment">
+            <h4>Robert Brown</h4>
+            <p>Saya ingin menambahkan bahwa informasi ini bisa digunakan untuk pemula yang baru belajar.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 By Bayu Ardiansyah P. (4123018)</p>
+    </footer>
+
+</body>
+</html>
